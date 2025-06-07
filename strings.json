@@ -1,0 +1,19 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Hello World",
+        "description": "Configura la tua integrazione Hello World",
+        "data": {
+          "name": "Nome dell'integrazione"
+        }
+      }
+    },
+    "error": {
+      "unknown": "Errore sconosciuto"
+    },
+    "abort": {
+      "already_configured": "L'integrazione è già configurata"
+    }
+  }
+} 

@@ -36,6 +36,10 @@ class HelloWorldConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         """Handle the initial step."""
         errors: dict[str, str] = {}
         
+        # Check if already configured
+        await self.async_set_unique_id(DOMAIN)
+        self._abort_if_unique_id_configured()
+        
         if user_input is not None:
             try:
                 info = await validate_input(self.hass, user_input)
