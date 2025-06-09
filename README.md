@@ -35,6 +35,24 @@ Il sensore apparirà nella tua dashboard Home Assistant e potrà essere utilizza
 - ✅ Configurazione tramite interfaccia utente
 - ✅ Icona personalizzata
 - ✅ Supporto per rimozione integrazione
+- ✅ **Notifiche automatiche aggiornamenti** - Home Assistant ti avviserà quando ci sono nuove versioni disponibili
+
+## Setup Notifiche Aggiornamenti
+
+Per ricevere notifiche automatiche degli aggiornamenti in Home Assistant:
+
+1. **Modifica il repository GitHub** nel file `update.py`:
+   ```python
+   GITHUB_REPO = "tuousername/hello_world_integration"  # Cambia con il tuo repo
+   ```
+
+2. **Crea releases su GitHub** quando aggiorni l'integrazione:
+   - Vai su GitHub → Releases → Create a new release
+   - Tag version: `v1.0.2` (incrementa la versione)
+   - Release title: `Version 1.0.2`
+   - Descrivi le modifiche nelle note di rilascio
+
+3. **Home Assistant mostrerà automaticamente** la notifica di aggiornamento disponibile!
 
 ## Sviluppo
 

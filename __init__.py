@@ -10,7 +10,7 @@ from homeassistant.helpers.typing import ConfigType
 _LOGGER = logging.getLogger(__name__)
 
 DOMAIN = "hello_world"
-PLATFORMS = ["sensor"]
+PLATFORMS = ["sensor", "update"]
 
 
 async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
