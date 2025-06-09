@@ -80,7 +80,7 @@ class HelloWorldUpdateEntity(UpdateEntity):
         self.coordinator = coordinator
         self.config_entry = config_entry
         self._attr_unique_id = f"{DOMAIN}_update"
-        self._attr_name = "Hello World Integration"
+        self._attr_name = "Update_checker"
         self._attr_supported_features = UpdateEntityFeature.RELEASE_NOTES
 
     @property
